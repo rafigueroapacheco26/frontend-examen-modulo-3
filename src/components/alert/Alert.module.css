@@ -10,7 +10,8 @@
 
 @media (min-width: 768px) {
   .alerta {
-    right: 10%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
