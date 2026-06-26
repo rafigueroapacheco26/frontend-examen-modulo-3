@@ -11,7 +11,7 @@ function App() {
   );
   
   return (
-    <div className="d-flex flex-column justify-content-between min-vh-100" data-bs-theme={isDark ? "dark" : "light"}>
+    <div className="d-flex flex-column" data-bs-theme={isDark ? "dark" : "light"}>
       <BotonClaroOscuro setTema={setIsDark} />
       <ListaProductos />
     </div>
