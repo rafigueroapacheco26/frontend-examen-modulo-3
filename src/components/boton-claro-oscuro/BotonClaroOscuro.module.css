@@ -1,0 +1,16 @@
+.boton {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.oscuro {
+  color: var(--text-h);
+}
+
+.claro {
+  color: var(--text);
+}
