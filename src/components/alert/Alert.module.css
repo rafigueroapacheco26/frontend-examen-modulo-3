@@ -1,0 +1,27 @@
+.alerta {
+  position: fixed;
+  top: 20px;
+  right: 0px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+@media (min-width: 768px) {
+  .alerta {
+    right: 10%;
+  }
+}
+
+.success {
+  color: var(--alert-success);
+  background: var(--alert-success-bg);
+  border: 1px solid var(--alert-success-border);
+}
+
+.error {
+  color: var(--alert-error);
+  background: var(--alert-error-bg);
+  border: 1px solid var(--alert-error-border);
+}
