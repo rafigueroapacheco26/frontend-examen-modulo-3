@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaSun } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
-import styles from './BotonClaroOscuro.module.css'
+import './BotonClaroOscuro.css'
 
 export default function BotonClaroOscuro({
   setTema
@@ -18,9 +18,18 @@ export default function BotonClaroOscuro({
 
   return (
     <div className="d-flex justify-content-end align-content-center me-4">
-      <button className={styles.boton + ' ' + (isDark ? styles.oscuro : styles.claro)} onClick={() => setIsDark(!isDark)}>
-        {isDark ? <FaSun className="fs-1" /> : <FaMoon className="fs-1" />}
-      </button>
+      <label className='toogle-light-dark'>
+        <input className='toggle-checkbox' type='checkbox' onChange={() => setIsDark(!isDark)}></input>
+        <div className='toggle-slot'>
+          <div className='sun-icon-wrapper'>
+            <div className="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+          </div>
+          <div className='toggle-button'></div>
+          <div className='moon-icon-wrapper'>
+            <div className="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+          </div>
+        </div>
+      </label>
     </div>
   )
 }
